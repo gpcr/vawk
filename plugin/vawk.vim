@@ -33,7 +33,8 @@ function! s:Vawk(start, end, cmdline)
 endfunction
 
 "
-" Abstracted function for Vonly and Vcut.
+" Parse a string representing columns and ranges of columns into a list of
+" columns.
 "
 function! s:Vparse(cols)
     let l:collist = []
