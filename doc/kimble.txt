@@ -1,0 +1,50 @@
+*kimble.txt*  Simple Subversion wrappers
+
+Author:  Tom Ryder <tom@sanctum.geek.nz>
+License: Same terms as Vim itself (see |license|)
+
+DESCRIPTION                                     *kimble*
+
+Some simple Subversion command wrappers to ease the pain of developing with
+Subversion as a VCS. This is very experimental and will be developed more as I
+have time and/or inclination.
+
+COMMANDS                                        *kimble-commands*
+
+:Sstatus                                        *kimble-:Sstatus*
+                        Runs 'svn status' and prints its output in a scratch
+                        buffer at the bottom of the screen.
+
+:Scommit                                        *kimble-:Scommit*
+                        Runs 'svn commit' and prints its output in a scratch
+                        buffer at the bottom of the screen.
+
+:Sinfo                                          *kimble-:Sinfo*
+                        Runs 'svn info' and prints its output in a scratch
+                        buffer at the bottom of the screen.
+
+:Supdate                                        *kimble-:Supdate*
+                        Runs 'svn update' and prints its output in a scratch
+                        buffer at the bottom of the screen.
+
+:Sadd                                           *kimble-:Sadd*
+                        Runs 'svn add' and prints its output in a scratch
+                        buffer at the bottom of the screen. Accepts an optional
+                        argument, otherwise assumes you mean the current file.
+
+:Sblame                                         *kimble-:Sblame*
+                        Runs 'svn blame' and prints its output in a scratch
+                        buffer at the left of the screen. Accepts an optional
+                        argument, otherwise assumes you mean the current file.
+
+:Sdiff                                          *kimble-:Sdiff*
+                        Runs 'svn diff' and prints its output in a scratch
+                        buffer at the bottom of the screen. Accepts an optional
+                        argument, otherwise assumes you mean the current file.
+
+:Slog                                           *kimble-:Slog*
+                        Runs 'svn log' and prints its output in a scratch
+                        buffer at the bottom of the screen. Accepts an optional
+                        argument, otherwise assumes you mean the current file.
+
+ vim:tw=78:et:ft=help:norl:
