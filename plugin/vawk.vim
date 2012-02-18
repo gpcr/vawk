@@ -64,17 +64,17 @@ function! s:Vfilter(start, end, cols, equiv, logic)
 endfunction
 
 "
-" Print only the specified columns.
-"
-function! s:Vonly(start, end, cols)
-    call s:Vfilter(a:start, a:end, a:cols, '==', '||')
-endfunction
-
-"
 " Print everything but the specified columns.
 "
 function! s:Vcut(start, end, cols)
     call s:Vfilter(a:start, a:end, a:cols, '\!=', '&&')
+endfunction
+
+"
+" Print only the specified columns.
+"
+function! s:Vonly(start, end, cols)
+    call s:Vfilter(a:start, a:end, a:cols, '==', '||')
 endfunction
 
 "
