@@ -21,5 +21,5 @@ License
 Copyright (c) [Tom Ryder][1]. Distributed under the same terms as Vim itself.
 See `:help license`.
 
-[1]: http://www.sanctum.geek.nz/about/tom-ryder
+[1]: http://sanctum.geek.nz/
 
